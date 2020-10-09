@@ -30,7 +30,7 @@ class App extends React.Component {
        const cartItems=this.state.cartItems.slice();
        let alreadyInCart=false;
        cartItems.forEach((item)=>{
-         if(item._id==product._id){
+         if(item._id===product._id){
            item.count++;
            alreadyInCart=true;
          }
